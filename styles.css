@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
@@ -7,20 +6,19 @@ body {
     color: #333;
 }
 
-/* Container */
+
 .container {
     width: 85%;
     margin: auto;
 }
 
-/* Header Section with Light Blue Background */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    background-color: #7cc8ff; /* Light blue color */
-    height: 200px; /* Adjust as needed */
+    background-color: #7cc8ff; 
+    height: 200px; 
     color: white;
     border-bottom: 5px solid #007bff;
 }
@@ -45,7 +43,7 @@ header .left h1 {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Section Styling */
+
 section {
     margin: 40px 0;
     padding: 20px;
@@ -61,7 +59,7 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* Skills & Achievements */
+
 .skills-box, .achievements-box {
     background: #f1f8ff;
     padding: 15px;
@@ -70,7 +68,7 @@ h2 {
     font-size: 18px;
 }
 
-/* Projects */
+
 .project {
     background: #e3f2fd;
     padding: 15px;
@@ -79,7 +77,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Contact Section */
+
 .contact-container {
     display: flex;
     justify-content: space-between;
@@ -101,7 +99,7 @@ h2 {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -111,11 +109,9 @@ footer {
     border-radius: 0 0 10px 10px;
 }
 
-/* Responsive Styles */
 
-/* Mobile View */
 @media (max-width: 768px) {
-    /* Header */
+    
     header {
         flex-direction: column;
         height: auto;
@@ -131,24 +127,23 @@ footer {
         height: 120px;
     }
 
-    /* About Section */
     #about {
         text-align: center;
     }
 
-    /* Skills & Achievements */
+    
     .skills-box, .achievements-box {
         font-size: 16px;
         padding: 10px;
     }
 
-    /* Projects */
+   
     .project {
         font-size: 16px;
         padding: 10px;
     }
 
-    /* Contact Section */
+    
     .contact-container {
         flex-direction: column;
         align-items: center;
@@ -166,7 +161,6 @@ footer {
     }
 }
 
-/* Tablet View */
 @media (max-width: 1024px) {
     header {
         padding: 25px;
