@@ -22,14 +22,10 @@ header {
     background-color: #7cc8ff; /* Light blue color */
     height: 200px; /* Adjust as needed */
     color: white;
-    
     border-bottom: 5px solid #007bff;
-    display: flex;
-    padding-bottom: 3px;
 }
 
-/* Name & Tagline */
-.left h1 {
+header .left h1 {
     font-size: 36px;
     margin: 0;
     font-weight: bold;
@@ -41,7 +37,6 @@ header {
     opacity: 0.9;
 }
 
-/* Profile Image */
 .profile-img {
     width: 160px;
     height: 160px;
@@ -97,7 +92,6 @@ h2 {
     margin: 8px 0;
 }
 
-/* QR Code Styling */
 .qr-code {
     width: 110px;
     border: 3px solid black; /* Black border */
@@ -115,4 +109,79 @@ footer {
     color: white;
     font-size: 16px;
     border-radius: 0 0 10px 10px;
+}
+
+/* Responsive Styles */
+
+/* Mobile View */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    header .left {
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* About Section */
+    #about {
+        text-align: center;
+    }
+
+    /* Skills & Achievements */
+    .skills-box, .achievements-box {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* Projects */
+    .project {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-container .left p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .qr-code {
+        width: 90px;
+        padding: 4px;
+    }
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    header {
+        padding: 25px;
+    }
+
+    .skills-box, .achievements-box {
+        font-size: 17px;
+    }
+
+    .project {
+        font-size: 17px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
